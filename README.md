@@ -85,37 +85,33 @@ The application combines a **React frontend**, a **Node.js/Express backend**, an
 - **npm**
 
 ---
+## Running the Application
 
-## 🚀 Running the Application
+1. **Open two terminal windows**:
+   - One for the frontend  
+   - One for the backend  
 
-### 1. Open two terminals
-- Frontend  
-- Backend  
-
----
-
-### 2. Backend Setup
-```bash
-cd backend
-npm install
-node server.js
-3. Frontend Setup
-cd frontend
-npm install
-npm run dev
-4. Access the App
-
+2. **Backend Setup** (in the backend terminal):
+   ```bash
+   cd backend/tbd
+   mvn clean install    # Run this only if new dependencies were added
+   mvn spring-boot:run
+3. **Frontend Setup** (in the frontend terminal):
+   ```bash
+   cd frontend
+   npm install          # Run this only if new dependencies were added
+   npm start
+4. **Access the App**
 Frontend:
-
 http://localhost:5173
 
 Backend:
-
 http://localhost:5050
-📸 Demo Video
+
+### 📸 Demo Video
 
 🎥 https://drive.google.com/file/d/1whvDi1ZEV0GmMICCAwwMu4-cT0T-d8Xe/view?usp=drive_link
 
-📄 License
+### 📄 License
 
 This project is for educational and assessment purposes only.
