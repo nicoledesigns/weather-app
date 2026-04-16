@@ -85,6 +85,13 @@ The application combines a **React frontend**, a **Node.js/Express backend**, an
 - **npm**
 
 ---
+
+## 📦 Dependencies
+
+All project dependencies are managed through `package.json`.
+
+---
+
 ## Running the Application
 
 1. **Open two terminal windows**:
