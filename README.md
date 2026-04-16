@@ -93,14 +93,12 @@ The application combines a **React frontend**, a **Node.js/Express backend**, an
 
 2. **Backend Setup** (in the backend terminal):
    ```bash
-   cd backend/tbd
-   mvn clean install    # Run this only if new dependencies were added
-   mvn spring-boot:run
+   cd backend
+   node server.js
 3. **Frontend Setup** (in the frontend terminal):
    ```bash
    cd frontend
-   npm install          # Run this only if new dependencies were added
-   npm start
+   npm run dev
 4. **Access the App**
 Frontend:
 http://localhost:5173
