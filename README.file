@@ -1,0 +1,116 @@
+# 🌦️ Weather App
+
+A modern, responsive weather application built with React that provides real-time weather data, animated weather effects, and search history tracking with export functionality.
+
+This project was built for the **Product Manager Accelerator Technical Assessment**.
+
+---
+
+## ✨ Features
+
+- 🌍 Search weather by city, postal code, or coordinates  
+- 📍 Get weather using current geolocation  
+- 🌦️ Real-time weather data (Open-Meteo API)  
+- 📊 5-day weather forecast  
+- 🎨 Dynamic animated backgrounds (rain, snow, fog, storm, clear sky)  
+- 🌡️ Celsius / Fahrenheit toggle  
+- 📜 Search history stored via backend API  
+- 📤 Export history as CSV or PDF  
+- 📱 Fully responsive UI for desktop and mobile  
+
+---
+
+## 🧠 Tech Stack
+
+**Frontend**
+- React (Hooks, Functional Components)
+- HTML5 Canvas (weather animations)
+- Inline + CSS styling
+
+**Backend**
+- Node.js / Express
+- REST API for weather + history storage
+
+**APIs**
+- Open-Meteo Weather API
+- Open-Meteo Geocoding API
+
+---
+
+## 🌤️ Weather Effects System
+
+The background changes dynamically based on weather codes:
+
+| Condition | Effect |
+|----------|--------|
+| Clear | Blue sky gradient |
+| Rain | Animated rain particles |
+| Snow | Falling snow |
+| Fog | Moving fog layers |
+| Storm | Dark storm animation |
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/your-username/weather-app.git
+cd weather-app
+2. Install dependencies
+npm install
+3. Run the frontend
+npm run dev
+4. Run the backend
+node server.js
+
+Backend runs on:
+
+http://localhost:5050
+⚙️ Configuration
+
+Update API base URL if needed:
+
+const API_BASE = "http://localhost:5050/api/weather";
+
+For mobile testing (Expo / phone access):
+
+const API_BASE = "http://YOUR_LOCAL_IP:5050/api/weather";
+📁 Project Structure
+weather-app/
+│
+├── src/
+│   ├── components/
+│   │   ├── WeatherApp.jsx
+│   │   └── DynamicWeatherBackground.jsx
+│   │
+│   ├── App.jsx
+│   └── styles.css
+│
+├── backend/
+│   ├── server.js
+│   └── routes/
+│
+└── README.md
+📤 API Endpoints
+Get weather data
+POST /api/weather
+Get search history
+GET /api/weather
+Delete history record
+DELETE /api/weather/:id
+Export data
+GET /api/weather/export
+GET /api/weather/export?format=pdf
+📸 Preview
+
+Add screenshots or GIF here of the app in action (recommended)
+
+👩‍💻 Author
+
+Nicole Antoun
+Product Manager Accelerator – Technical Assessment
+
+📄 License
+
+This project is for educational and demonstration purposes only.
