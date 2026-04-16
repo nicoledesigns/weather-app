@@ -25,7 +25,7 @@ This project was built for the **Product Manager Accelerator Technical Assessmen
 **Frontend**
 - React (Hooks, Functional Components)
 - HTML5 Canvas (weather animations)
-- Inline + CSS styling
+- CSS styling
 
 **Backend**
 - Node.js / Express
@@ -55,8 +55,9 @@ The background changes dynamically based on weather codes:
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/your-username/weather-app.git
+git clone https://github.com/nicoledesigns/weather-app.git
 cd weather-app
+
 2. Install dependencies
 npm install
 3. Run the frontend
@@ -73,7 +74,7 @@ Update API base URL if needed:
 
 const API_BASE = "http://localhost:5050/api/weather";
 
-For mobile testing (Expo / phone access):
+For mobile testing:
 
 const API_BASE = "http://YOUR_LOCAL_IP:5050/api/weather";
 📁 Project Structure
@@ -93,18 +94,14 @@ weather-app/
 │
 └── README.md
 📤 API Endpoints
-Get weather data
-POST /api/weather
-Get search history
-GET /api/weather
-Delete history record
+POST   /api/weather
+GET    /api/weather
 DELETE /api/weather/:id
-Export data
-GET /api/weather/export
-GET /api/weather/export?format=pdf
+GET    /api/weather/export
+GET    /api/weather/export?format=pdf
 📸 Preview
 
-Add screenshots or GIF here of the app in action (recommended)
+Add screenshots or a demo GIF here (highly recommended for recruiters)
 
 👩‍💻 Author
 
