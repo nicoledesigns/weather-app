@@ -22,113 +22,100 @@ The application combines a **React frontend**, a **Node.js/Express backend**, an
   - **Postal code**  
   - **Geographic coordinates**  
 - **Fast and responsive** query handling  
-- Clean UI with **real-time updates**  
+- Clean UI with **real-time updates**
 
 ---
 
 ### 📍 **Current Location Detection**
 - Automatically fetch weather using **device geolocation**  
-- Provides **instant local weather conditions**  
-- Enhances **user convenience and accessibility**  
+- Provides **instant local weather conditions**
 
 ---
 
 ### 🌦️ **Real-Time Weather Data**
 - Powered by **Open-Meteo API**  
 - Displays:
-  - **Temperature**  
-  - **Wind speed**  
-  - **Weather conditions**  
-- **Accurate and continuously updated data**  
+  - **Temperature**
+  - **Wind speed**
+  - **Weather conditions**
 
 ---
 
 ### 📊 **5-Day Forecast**
-- Extended forecast with **daily summaries**  
-- Clear visualization of **upcoming weather trends**  
-- Helps users **plan ahead effectively**  
+- Displays a **5-day forecast**
+- Organized in a **clear and user-friendly layout**
 
 ---
 
-### 🎨 **Dynamic Weather Backgrounds**
-- Interactive animated backgrounds based on weather conditions:
-  - ☀️ **Clear sky** (gradient blue)
-  - 🌧️ **Rain** (animated rain particles)
-  - ❄️ **Snow** (falling snow effect)
-  - 🌫️ **Fog** (soft layered motion)
-  - ⛈️ **Storm** (dark animated environment)
+### ⚠️ **Error Handling**
+- Handles:
+  - Invalid locations
+  - API failures
+- Displays **clear user-friendly messages**
 
 ---
 
-### 🌡️ **Unit Conversion**
-- Toggle between:
-  - **Celsius (°C)**
-  - **Fahrenheit (°F)**  
-- **Instant UI updates** without reloading  
-
----
-
-### 📜 **Search History Tracking**
-- Stores **previously searched locations**  
-- Backend API integration for **data persistence**  
-- Improves **usability and repeat searches**  
+### 📜 **Search History (CRUD)**
+- Stores previous searches  
+- Allows users to:
+  - **Create** entries  
+  - **Read** history  
+  - **Delete** records  
 
 ---
 
 ### 📤 **Data Export**
-- Export search history as:
-  - **CSV file**  
-  - **PDF report**  
-- Useful for **analysis and reporting**  
-
----
-
-### 📱 **Responsive Design**
-- Fully optimized for:
-  - **Desktop**  
-  - **Tablet**  
-  - **Mobile devices**  
-- Smooth and **consistent user experience**  
+- Export data as:
+  - **CSV**
+  - **PDF**
 
 ---
 
 ## 🧠 System Overview
 
-The application follows a **full-stack architecture**:
-
-- **Frontend (React)**  
-  Handles **UI rendering, animations, and user interactions**  
-
-- **Backend (Node.js / Express)**  
-  Manages **API requests, search history, and data exports**  
-
-- **External API (Open-Meteo)**  
-  Provides **weather and geocoding data**  
-
-This structure ensures **modularity, scalability, and maintainability**.
+- **Frontend (React)** → UI, animations, interaction  
+- **Backend (Node.js / Express)** → API, CRUD, data handling  
+- **External APIs** → Open-Meteo  
 
 ---
 
 ## ⚙️ Requirements
 
-Before running the application, ensure you have:
-
-- **Node.js (v16 or higher)**  
-- **npm (comes with Node.js)**  
-- **Internet connection** (for API requests)  
+- **Node.js (v16+)**
+- **npm**
 
 ---
 
 ## 🚀 Running the Application
 
-1. **Open two terminal windows**:
-   - One for the **frontend**  
-   - One for the **backend**  
+### 1. Open two terminals
+- Frontend  
+- Backend  
 
 ---
 
-2. **Backend Setup**:
+### 2. Backend Setup
 ```bash
 cd backend
 npm install
 node server.js
+3. Frontend Setup
+cd frontend
+npm install
+npm run dev
+4. Access the App
+
+Frontend:
+
+http://localhost:5173
+
+Backend:
+
+http://localhost:5050
+📸 Demo Video
+
+🎥 https://drive.google.com/file/d/1whvDi1ZEV0GmMICCAwwMu4-cT0T-d8Xe/view?usp=drive_link
+
+📄 License
+
+This project is for educational and assessment purposes only.
