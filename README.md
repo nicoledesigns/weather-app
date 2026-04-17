@@ -83,7 +83,11 @@ The application combines a **React frontend**, a **Node.js/Express backend**, an
 
 - **Node.js (v16+)**
 - **npm**
-
+- Create your .env file in the backend folder with:
+```bash
+PORT=5050
+MONGO_URI= URL
+API_KEY= YOUR_API_KEY
 ---
 
 ## 📦 Dependencies
